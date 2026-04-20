@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #FFFFFF;
+  --color-ink: #1A1A1A;
+  --font-serif: "Libre Baskerville", serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+  }
+}
+
+/* Artistic Flair utility classes */
+.border-ink {
+  border-color: var(--color-ink);
+}
+
+.stamp {
+  @apply border-2 border-ink px-2 py-0.5 uppercase font-bold text-[10px] inline-block;
+  transform: rotate(-2deg);
+}
+
+.dotted-line {
+  background-image: radial-gradient(var(--color-ink) 1px, transparent 0);
+  background-size: 12px 12px;
+  opacity: 0.1;
+}
+
+.paper-bg {
+  background-color: var(--color-paper);
+}
+
+.ink-bg {
+  background-color: var(--color-ink);
+}
+

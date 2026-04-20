@@ -1,0 +1,27 @@
+{
+  "entities": {
+    "JobApplication": {
+      "title": "Job Application",
+      "description": "Details of a job application submitted by a user.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "UID of the user who owns this record." },
+        "company": { "type": "string", "description": "Name of the company." },
+        "role": { "type": "string", "description": "Job title or role." },
+        "status": { "type": "string", "enum": ["Applied", "Interview", "Offer", "Rejected"], "description": "Current status of the application." },
+        "date": { "type": "string", "format": "date", "description": "Date application was logged." },
+        "notes": { "type": "string", "description": "Personal notes or interview feedback." },
+        "salary": { "type": "string", "description": "Proposed salary or range." },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "company", "role", "status", "date"]
+    }
+  },
+  "firestore": {
+    "/applications/{applicationId}": {
+      "schema": "JobApplication",
+      "description": "Collection of all job applications."
+    }
+  }
+}

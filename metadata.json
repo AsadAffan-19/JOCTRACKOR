@@ -1,0 +1,6 @@
+{
+  "name": "JobTracker",
+  "description": "A minimal, paper-aesthetic job application tracker for students and job seekers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
