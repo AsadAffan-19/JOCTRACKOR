@@ -1,8 +1,7 @@
 # 📓 JOCTRACKOR
 > *A professional-grade, artistic career trajectory ledger.*
 
-JOCTRACKOR is a minimal, paper-aesthetic job application tracker designed for students and job seekers who value precision and professional documentation. It replaces chaotic spreadsheets with a high-contrast, persistent ledger that provides behavioral insights through real-time data visualization.
-
+my ve
 ---
 
 ## ✨ Key Features

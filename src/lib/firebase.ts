@@ -3,13 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDerWqKP9O6nOT1eGpoFidLOr2E_erwJdE",
-  authDomain: "jobtracker-41e9b.firebaseapp.com",
-  projectId: "jobtracker-41e9b",
-  storageBucket: "jobtracker-41e9b.firebasestorage.app",
-  messagingSenderId: "580141870610",
-  appId: "1:580141870610:web:adc8078a05e26362f6b2cb",
-  measurementId: "G-DY5XJCES85"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
